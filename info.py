@@ -12,33 +12,33 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Auto_Filters_Bot')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '9064103'))
+API_HASH = environ.get('API_HASH', '247277fb2e7a44066c7543e5a689f4f7')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5360884654:AAE06CIALzPvToEp7IssFYxSdWjdldXFfWQ')
 
 # Bot pics and stickers
 STICKERS = (environ.get('STICKERS', 'CAACAgIAAxkBAAEGm9hjhf69CtQmXoeQ2HidYCGBFeZ4gAACxgEAAhZCawpKI9T0ydt5RysE CAACAgIAAxkBAAEGm9pjhf7I9jCDh3PpkocMNFcPJfisvwAC0wADVp29CvUyj5fVEvk9KwQ CAACAgIAAxkBAAEGm9xjhf7SH4Yc8EP5yI4e8BTH968ClwACGAADDbbSGX671giQDJU8KwQ')).split()
-PICS = (environ.get('PICS', 'https://telegra.ph/file/58fef5cb458d5b29b0186.jpg https://telegra.ph/file/f0aa4f433132769f8970c.jpg https://telegra.ph/file/f515fbc2084592eca60a5.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://telegra.ph/file/6045ba953af4def846238.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/0feda41aae04badb26e27.jpg https://telegra.ph/file/ddba3123c22514b506f49.jpg')).split()
 
 # Bot Admins
-ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '').split()]
+ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '5108030643').split()]
 auth_users = [int(auth_users) if id_pattern.search(auth_users) else auth_users for auth_users in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # Channels
 INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001817136582')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001983057243'))
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://shelarsujal9:SUJAL33535@cluster0.qric6xs.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/SL_Bots_Support')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/SL_Bots_Updates')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Ipapkornbackup')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/Ipapcornbotr')
 
 # Bot settings
 AUTO_FILTER = is_enabled((environ.get('AUTO_FILTER', "True")), True)
@@ -56,8 +56,8 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "✅ I Found: <code>{query}</code>\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating} / 10</a>\n☀️ Languages: {languages}\n📀 RunTime: {runtime} Minutes\n\n🗣 Requested by: {message.from_user.mention}\n©️ Powered by: <b>{message.chat.title}</b>")
 FILE_CAPTION = environ.get("FILE_CAPTION", "<code>{file_name}</code>")
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "mdisklink.link")
-SHORTLINK_API = environ.get("SHORTLINK_API", "5843c3cc645f5077b2200a2c77e0344879880b3e")
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "zxlink.in")
+SHORTLINK_API = environ.get("SHORTLINK_API", "f195125dfc729c995e0fca9d431bd4480505bea9")
 WELCOME_TEXT = environ.get("WELCOME_TEXT", "Hello {mention}, Welcome to {title} group!")
                            
 # Log
