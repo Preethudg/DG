@@ -21,7 +21,7 @@ STICKERS = (environ.get('STICKERS', 'CAACAgIAAxkBAAEGm9hjhf69CtQmXoeQ2HidYCGBFeZ
 PICS = (environ.get('PICS', 'https://telegra.ph/file/0feda41aae04badb26e27.jpg https://telegra.ph/file/ddba3123c22514b506f49.jpg')).split()
 
 # Bot Admins
-ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '7405406082').split()]
+ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '7405406082 2089142494').split()]
 auth_users = [int(auth_users) if id_pattern.search(auth_users) else auth_users for auth_users in environ.get('AUTH_USERS', '2089142494').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
