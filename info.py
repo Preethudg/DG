@@ -15,7 +15,7 @@ SESSION = environ.get('SESSION', 'Auto_Filters_Bot')
 API_ID = int(environ.get('API_ID', '23009724'))
 API_HASH = environ.get('API_HASH', '66a87d259426e268bdd765fb4c635f2b')
 BOT_TOKEN = environ.get('BOT_TOKEN', '7669869417:AAE-1f8LM3Au1EtAzwxoihmSVbavp3RZ2NM')
-PORT = int(environ.get('PORT', '8080'))
+PORT = int(environ.get('PORT', '5000'))
 
 # Bot pics and stickers
 STICKERS = (environ.get('STICKERS', 'CAACAgIAAxkBAAEGm9hjhf69CtQmXoeQ2HidYCGBFeZ4gAACxgEAAhZCawpKI9T0ydt5RysE CAACAgIAAxkBAAEGm9pjhf7I9jCDh3PpkocMNFcPJfisvwAC0wADVp29CvUyj5fVEvk9KwQ CAACAgIAAxkBAAEGm9xjhf7SH4Yc8EP5yI4e8BTH968ClwACGAADDbbSGX671giQDJU8KwQ')).split()
